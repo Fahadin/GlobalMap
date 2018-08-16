@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/leaflet.css" /> -->
+        <style>
+            body {
+                background: white;
+                margin: 0px !important;
+                padding: 0px !important;
+            }
+            .ui-content {
+                padding: 1px !important;
+            }
+            .center {
+                text-align: center;
+            }
+            iframe {
+                /* width: 200px;*/
+                min-height: 350px;
+                /* border-radius: 4px; */
+                overflow: hidden;
+            }
+            .info{
+                width: 40px;
+                height: 40px;
+                
+            }
+            .ui-nodisc-icon .info:after, .ui-nodisc-icon .info:after {
+                width: 100%;
+                height: 100%;
+            }
+            .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+                font-size: 10px !important;
+                display: none !important;
+            }
+        </style>
+        <script src="js/jquery.js"></script>
+        <script src="js/app.js"></script>
+        <!-- <script src="js/leaflet.js"></script> -->
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/mainScript.js"></script>
+        <script src="phonegap.js"></script>
+    </head>
+    <body>
+        <div id="homeScreen" data-role="page">
+            <!-- <img src="imgs/Red-love-header-banner.png" class="banner" /> -->
+            <div data-role="content">
+                <div class="ui-grid-a center">
+                    <div class="ui-block">
+                        <!-- <iframe src="https://www.google.com/" width="100%" height="800px">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14608.284052261726!2d90.41790391977541!3d23.744846950000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1534444445973" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <dsiv class="ui-grid-a center">
+                    <div class="ui-block">
+                        <a href="#aboutScreen" class="info ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-body" id="aboutScreen" data-role="page">
+            <header data-role="header" data-position="fixed" data-id="appHeader">
+                <h1>About</h1>
+                <!-- <img class="center img-size" src="imgs/f-icon.png" /> -->
+                <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+            </header>
+            <div data-role="content" class="center">
+                <h2 class="center">FahadIn</h2>
+                <img class="center img-size-sm" src="imgs/fahadin.jpg" />
+                <h3 class="center">Best Creative Application Software</h3>
+                <h5 class="center">made by Fahad</h5>
+                <p class="center">Calculator is a device that performs arithmetic operations on numbers. The simplest calculators can do only addition, subtraction, multiplication, and division.
+                        <br>
+                        <br>
+                        <a href="#" class="other">Our Other Apps</a></p>
+                <p class="center">kawsarkamal71@gmail.com</p>
+            </div>
+        </div>
+        
+        <!-- end alert box -->
+    </body>
+</html>
