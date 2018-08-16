@@ -55,7 +55,6 @@
         <script src="phonegap.js"></script>
     </head>
     <body>
-        <div id="main" data-role="page">
             <div id="homeScreen" data-role="page">
                 <!-- <img src="imgs/Red-love-header-banner.png" class="banner" /> -->
                 <div data-role="content">
@@ -92,29 +91,7 @@
                     <p class="center">kawsarkamal71@gmail.com</p>
                 </div>
             </div>
-        </div>
-        <script type="text/javascript">
-            document.addEventListener("backbutton", function() {
-                if ( $('.ui-page-active').attr('id') == 'main') {
-                    exitAppPopup();
-                } else {
-                    history.back();             
-                }
-            }, false);
-            function exitAppPopup() {
-                navigator.notification.confirm(
-                      'Exit PhoneGap ' + device.cordova + ' Demo?'
-                    , function(button) {
-                          if (button == 2) {
-                              navigator.app.exitApp();
-                          } 
-                      }
-                    , 'Exit'
-                    , 'No,Yes'
-                );  
-                return false;
-            }
-        </script>
+       
         <!-- end alert box -->
     </body>
 </html>
