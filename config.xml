@@ -18,19 +18,19 @@
 
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation" value="portrait" />
-    <preference name="fullscreen" value="true" />
+    <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="disallowOverscroll" value="true" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="disallowOverscroll" value="false" />
     <preference name="target-device" value="universal"/>
     <preference name="deployment-target" value="7.0"/>
-    <preference name="exit-on-suspend" value="true"/>
+    <preference name="exit-on-suspend" value="false"/>
     <preference name="detect-data-types" value="true"/>
     <preference name="prerendered-icon" value="false"/>
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="ios-statusbarstyle" value="default"/>
     <preference name="StatusBarStyle" value="default" />
-    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
+    <preference name="HideKeyboardFormAccessoryBar" value="false"/>
     
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-installLocation" value="auto" />
